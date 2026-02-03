@@ -1,6 +1,139 @@
-# Physiological Monitoring System
+# VenaLift  
+### Wearable Abdominal Compression System for Parkinson’s-Related Orthostatic Hypotension
 
-Built for USC ASBME's Make-a-thon 2026: A real-time physiological monitoring system for detecting sit-to-stand events and tracking mobility patterns. Designed for Parkinson's disease patients and individuals at risk of orthostatic hypotension.
+**VenaLift** is a patient-centered wearable abdominal compression device designed to prevent dangerous blood pressure drops during posture transitions in individuals with Parkinson’s disease suffering from neurogenic orthostatic hypotension (nOH). By detecting sit-to-stand and bed-rise movements in real time and applying adaptive compression only when risk is present, VenaLift reduces fall risk while preserving comfort, independence, and autonomy.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/oleeveeuh/VenaLift/refs/heads/main/assets/VenaLift%20Device.png" width="700">
+</p>
+
+
+---
+
+## Problem Background
+
+In Parkinson’s disease, impaired norepinephrine signaling prevents normal vascular constriction when standing. This causes venous blood pooling in the abdomen and lower extremities, reducing cerebral blood flow and leading to:
+
+- Weakness  
+- Lightheadedness  
+- Dizziness  
+- Fainting  
+- Increased fall risk  
+
+These symptoms are most severe during transitions such as:
+- Supine → sitting  
+- Sitting → standing  
+
+Neurogenic orthostatic hypotension affects approximately **30–50% of Parkinson’s patients**, with prevalence increasing in adults over 60.
+
+---
+
+## Needs Statement
+
+A way to prevent dangerous blood pressure drops in patients with Parkinson’s disease suffering from orthostatic hypotension during sit-to-stand transitions in order to reduce fall risk and preserve patient independence.
+
+---
+
+## Limitations of Existing Solutions
+
+| Existing Solution | Limitations |
+|-------------------|-------------|
+| Static abdominal binders | Require manual adjustment, uncomfortable, poor compliance |
+| Compression socks | Do not address abdominal blood pooling, difficult for patients with tremors |
+| Medication (e.g., droxidopa) | Side effects, frequent dosing, does not adapt to posture changes, expensive |
+| Passive solutions | Apply constant pressure and risk supine hypertension |
+
+There is currently no dynamic, movement-triggered, closed-loop wearable solution.
+
+---
+
+## Our Solution: VenaLift
+
+VenaLift is engineered for Parkinson’s-related motor challenges and focuses on reducing patient effort while enabling discreet, adaptive support.
+
+### Key Features
+
+- **Movement-triggered activation**  
+  IMU-based posture detection triggers compression when the user begins to stand or rise from bed and stops once support is complete.
+
+- **Posture-dependent support**  
+  Compression is applied only during risk windows, avoiding continuous pressure and reducing the risk of supine hypertension.
+
+- **Patient-friendly design**  
+  Designed for comfort, autonomy, and ease of use despite tremors or limited dexterity.
+
+- **Low-cost prototype**  
+  Approximate hardware prototype cost: **$33.78**, significantly lower than long-term medication or clinical alternatives.
+
+---
+
+## VenaLift in Action
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=jWhuD4wwMPo">
+    <img
+      src="https://img.youtube.com/vi/jWhuD4wwMPo/maxresdefault.jpg"
+      alt="VenaLift - USC ASBME Make-a-thon 2026"
+      width="750"
+    />
+  </a>
+</p>
+
+**Demo Video:** Click to watch the VenaLift prototype in action at the USC ASBME Make-a-thon 2026.
+
+
+---
+
+## System Overview
+
+VenaLift integrates:
+- IMU-based posture detection  
+- Real-time physiological monitoring  
+- Automated compression actuation  
+- Dual dashboards for patients and clinicians  
+
+The system works as follows:
+
+1. Detect posture transition using IMU sensors  
+2. Confirm event using a state machine to avoid false positives  
+3. Apply abdominal compression during the critical standing window  
+4. Monitor blood pressure response  
+5. Log and visualize data in dashboards  
+
+---
+
+## Safety and Design Principles
+
+- Compression only activates during posture transitions  
+- Conservative force limits and time windows  
+- Refractory periods prevent repeated activation  
+- Designed to avoid continuous pressure and supine hypertension  
+- Focus on reassurance rather than anxiety-inducing metrics  
+
+---
+
+## Future Directions
+
+- Closed-loop blood pressure feedback using noninvasive PPG and PTT sensing  
+- Neural network-based detection of unsafe blood pressure drops  
+- Stakeholder-driven iteration with clinicians, patients, and caregivers  
+- Reduced manufacturing cost through improved textile-based bands  
+- Personalized compression profiles using patient-specific data  
+
+---
+
+## Team
+
+- Kathy Wong, Mechanical Engineering  
+- Mahlet Messay, Biomedical Engineering  
+- Olivia Liau, Computer Science  
+- Janet Kim, Health and Human Sciences  
+- John Peng, Electrical and Computer Engineering  
+- Ignatius Lau, Biomedical Engineering  
+
+---
+
+*This repository contains the software system for VenaLift, including posture detection logic, state machines, and dual dashboards for patient and clinician use. The following sections document the full software architecture and implementation.*
 
 ## Dashboards
 
