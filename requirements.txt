@@ -1,0 +1,13 @@
+# Physiological Monitoring System Requirements
+
+# Core dependencies
+numpy>=1.24.0
+
+# ML and statistics
+scikit-learn>=1.3.0
+
+# Optional: for data visualization
+matplotlib>=3.7.0
+
+# Optional: for advanced data handling
+pandas>=2.0.0

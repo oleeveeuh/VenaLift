@@ -1,0 +1,19 @@
+{
+  "event_id": 90,
+  "event_type": "stand_confirmed",
+  "timestamp": 14.659999999999776,
+  "datetime": "1969-12-31T16:00:14.660000",
+  "is_confirmed": true,
+  "biomechanics": {
+    "pitch_angle": 44.99,
+    "posture_state": "Seated"
+  },
+  "bp_response": {
+    "baseline_sbp": 120.0,
+    "current_sbp": 120.0,
+    "sbp_drop": 0.0,
+    "max_drop": 0.0,
+    "recovery_time": null
+  },
+  "additional_data": {}
+}

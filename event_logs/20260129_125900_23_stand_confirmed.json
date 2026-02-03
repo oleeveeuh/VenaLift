@@ -1,0 +1,19 @@
+{
+  "event_id": 23,
+  "event_type": "stand_confirmed",
+  "timestamp": 1769720340.0,
+  "datetime": "2026-01-29T12:59:00",
+  "is_confirmed": true,
+  "biomechanics": {
+    "pitch_angle": 74.0,
+    "posture_state": "Standing"
+  },
+  "bp_response": {
+    "baseline_sbp": 122.0,
+    "current_sbp": 106.0,
+    "sbp_drop": 16.0,
+    "max_drop": 16.0,
+    "recovery_time": null
+  },
+  "additional_data": {}
+}
